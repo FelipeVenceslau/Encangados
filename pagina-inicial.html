@@ -13,20 +13,45 @@
 <body>
     <input type="checkbox" id="check">
         <label class="icone" for="check">
-            <img src="entrar.png" width="30px" height="30px">
+            <img src="perfil4.png" width="30px" height="30px">
         </label>
     
-        <nav class="menu" style="height: 330px;">
-            <span class="titulo-login">Login</span>
-                <div class="login">
-                    Email:<input type="text" id="cdtLogin" placeholder="Digite seu email...">
-                    Senha:<input type="password" id="cdtLogin" placeholder="Digite sua senha...">
-                    <div class="buttonLogin"> <a href="./index.html">Entrar</a> </div>
-                </div>        
-        </nav>
+        <nav class="menu">
+                <ul>
+                    <img src="perfil3.png" class="img-perfil"><br>
+                    <span class="nome-perfil">Alexya Calixto</span><br><br><br>
+                    <li>
+                        <a href="" >
+                            <div class="titulo-menu">
+                                <img src="perfil4.png" height="15px" width="15px">Minha Conta
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" >
+                            <div class="titulo-menu">
+                                <img src="calendar2.png" height="15px" width="15px">Meus Eventos
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" >
+                            <div class="titulo-menu">
+                                <img src="config.png" height="15px" width="15px">Configurações
+                            </div>
+                        </a>
+                    </li><br><br>
+                    <span class="sair">
+                        <a href="index.html">
+                            Sair
+                        </a>
+                    </span>
+                </ul>
+                
+            </nav>
 
         <nav class="navegador-superior">
-            <a href="index.html"><img src="marca.png" height="50px" width="50px"></a>
+            <a href="pagina-inicial.html"><img src="marca.png" height="50px" width="50px"></a>
             <div class="opcao"><a href="categorias.html">Categorias</a></div>
             <div class="opcao"><a href="ranking.html">Ranking</a></div>
             <div class="opcao"><a href="sobre.html">Sobre Nós</a></div>
@@ -38,21 +63,20 @@
                 <p>Exercitando o corpo juntos<br>
                 e melhorando a saúde.</p>
             </div>
-            <!--<div class="text-banner2">
+            <div class="text-banner2">
                     <a href="#participar2" class="scrollSuave">Participe ou crie seu evento em Quixadá</a>
-            </div>-->
+            </div>
             <img src="corrida.jpg">
         </div>
 
         <div class="pesquisar">
-            
-            <span>Pesquise por uma atividade física:</span><br>
-            <div class="barraBusca">
-                    <img src="buscar.png" alt="Lupa"/>
-                    <input type="text" id="txtBusca" placeholder="Buscar...">
-                    <button class="btnBusca">Pesquisar</button>
+            <div class="fundo-pesquisa">
+                <span style="color: white;">Pesquise por uma atividade física:</span><br>
+                <div class="barraBusca">
+                        <input type="text" id="txtBusca" placeholder="Buscar...">
+                        <button class="btnBusca">Pesquisar</button>
+                </div>
             </div>
-            
             <span>Atividades mais pesquisadas:</span>
             <div class="categorias">
                 <a href="corrida.html"><div class="corrida circulo">Corrida</div></a>
@@ -62,6 +86,15 @@
                 <a href="trilha.html"><div class="trilha circulo">Trilha</div></a>
                 <a href="bike.html"><div class="bike circulo">Ciclismo</div></a>
             </div>
+        </div>
+
+        <div class="text-participar" id="participar2">
+            <p>Participe de atividades físicas com outros moradores de Quixadá, ou crie seu próprio evento e convide todo mundo:</p><br><br>
+        </div>
+        
+        <div class="participar">
+            <div class="button"><a href="categorias.html">PARTICIPAR</a></div>
+            <div class="button"><a href="criar-evento.html">CRIAR SEU EVENTO</a></div>
         </div>
 
         <div class="container">
@@ -97,7 +130,7 @@
             $('.scrollSuave').click(function() {
                 $doc.animate({
                     scrollTop: $( $.attr(this, 'href') ).offset().top
-                }, 500);
+                }, 800);
                 return false;
             });
         </script>

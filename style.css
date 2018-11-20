@@ -2,7 +2,9 @@
         *{
             margin: 0 ;
             padding: 0;
-            font-family: 'Arial';
+            font-family: 'Arial'
+            /*font-family: Source Sans Pro;
+            src: url('SourceSansPro-Regular.otf');*/
         }
         
         .navegador-superior{
@@ -39,7 +41,7 @@
         .menu{
             width: 300px;
             background-color: #1263a2;
-            height: 500px;
+            height: 600px;
             font-family: 'Arial';
             position: fixed;
             left: -300px;
@@ -68,10 +70,19 @@
             cursor: pointer;
         }
 
+        .titulo-menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .titulo-menu img{
+            margin: 10px;
+        }
         .icone{
             position: fixed;
             z-index: 6;
-            margin: 10px;
+            margin: 20px;
             cursor: pointer;
         }
 
@@ -90,14 +101,16 @@
             border-radius: 50%;
         }
 
+        .menu .sair{
+            width: 100px;
+        }
         .menu .sair a{
             text-decoration: none;
             font-size: 12px;
             color: #ffe31d;
             padding: 10px;
             border: 1px solid #ffe31d;
-            border-radius: 10px;
-            
+            border-radius: 10px;            
         }
         .menu .sair a:hover{
             background-color: #ffe31d;
@@ -131,7 +144,7 @@
             width: 98.1%;
             padding: 15px;
             background-color: #1263a2;
-            background-image: url(11.jpg);
+            background-image: url(111.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -165,8 +178,7 @@
             font-size: 30px;
             padding: 30px;
             margin: 10px;
-            border-radius: 20px;
-            box-shadow: 3px 3px 10px black;
+            border-radius: 50px;
             border: 1px solid #1263a2;
             background-color: white;
             color: #1263a2;            
@@ -176,6 +188,7 @@
             text-decoration: white;
             background-color: #1263a2;
             cursor: pointer;
+            box-shadow: 0px 0px 10px black;
         }
 
         .button a{
@@ -252,26 +265,49 @@
 
         .pesquisar{
             text-align: center;
-            padding: 20px;
         }
         .pesquisar .barraBusca{
             display: flex;
             justify-content: center;
+            margin: 50px;
+        }
+
+        .pesquisar .fundo-pesquisa{
+            background-color: #1263a2;
+            margin-top: -3px;
+            height: 200px;
+            padding: 20px;
+            margin-bottom: 30px;
         }
 
         #txtBusca{
             float:left;
-            background-color:transparent;
             padding-left:5px; 
             font-size:18px;
             height:32px;
             width:490px;
             font-style: italic;
             display: block;
-            border: 1px solid #1263a2;
-            border-radius: 15px;
+            border-radius: 25px;
+            border: none;
             padding: 10px;
             margin: 5px;
+            
+        }
+
+        #txtBusca2{
+            float:left;
+            padding-left:5px; 
+            font-size:18px;
+            height:32px;
+            width:490px;
+            font-style: italic;
+            display: block;
+            border-radius: 25px;
+            border: 1px solid #1263a2;
+            padding: 10px;
+            margin: 5px;
+            
         }
 
         .barraBusca img{
@@ -283,15 +319,16 @@
 
         .barraBusca button{
             margin: 5px;
-            border: 1px solid #1263a2;
-            border-radius: 15px;
+            border: 1px solid #ffe31d;
+            border-radius: 25px;
             padding: 10px;
             cursor: pointer;
+            color: #1263a2;
         }
 
         .barraBusca button:hover{
-            background-color: #1263a2;
-            color: white;
+            background-color: #ffe31d;
+            
         }
 
         .pesquisar span{
@@ -422,13 +459,13 @@
         }
 
         form button{
-            margin: 5px;
             border: 1px solid #1263a2;
-            border-radius: 15px;
+            border-radius: 25px;
             padding: 10px;
             cursor: pointer;
             font-size: 20px;
             color: #1263a2;
+            margin: 20px;
         }
 
         form button:hover{
@@ -460,21 +497,21 @@
 
         #seletorCategorias{
             border: 1px solid #1263a2;
-            border-radius: 10px;
+            border-radius: 25px;
             padding: 10px;
             margin: 10px;
         }
 
         #dataForm{
             border: 1px solid #1263a2;
-            border-radius: 10px;
+            border-radius: 25px;
             padding: 10px;
             margin: 10px;
         }
 
         #horario{
             border: 1px solid #1263a2;
-            border-radius: 10px;
+            border-radius: 25px;
             padding: 10px;
             margin: 10px;
             
@@ -490,4 +527,107 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+        }
+
+        .ranking{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .ranking-titulo{
+            width: 100%;
+            height: 100px;
+            margin: 0;
+            text-align: center;
+            padding: 80px;
+            background-image: url(bikebanner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .ranking-titulo span{
+            font-size: 50px;
+            color: #ffe31d;
+            border: 1px solid #ffe31d;
+            border-radius: 50px;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .lista{
+            background-color: #1263a2;
+            height: 500px;
+            width: 500px;
+            font-size: 20px;
+        }
+
+        .pessoa{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            color: white;
+            width: 470px;
+            padding: 15px;
+        }
+
+        .pessoa p{
+            right: 20px;
+        }
+
+        .pessoa1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 470px;
+            padding: 15px;
+        }
+
+        .pessoa1 p{
+            right: 20px;
+        }
+
+        .login{
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffe31d;
+        }
+        #cdtLogin{
+            width: 80%;
+            border: 1px solid #ffe31d;
+            border-radius: 10px;
+            font-style: italic;
+            display: block;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+        .buttonLogin{
+            padding-top: 10px;
+        }
+
+        .buttonLogin a{
+            border: 1px solid #ffe31d;
+            border-radius: 20px;
+            color: #ffe31d;
+            padding: 10px;
+            margin: 10px;
+            background-color: #1263a2;
+            font-size: 20px;
+        }
+
+        .buttonLogin a:hover{
+            background-color: #ffe31d;
+            color: #1263a2;
+            cursor: pointer;
+        }
+
+        .titulo-login{
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            color: #ffe31d;
+            margin-top: 40px;
         }

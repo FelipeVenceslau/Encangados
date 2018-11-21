@@ -557,10 +557,11 @@
 
         .lista{
             background-color: #1263a2;
-            height: 500px;
+            height: 370px;
             width: 500px;
-            font-size: 20px;
+            font-size: 25px;
             margin-top: 50px;
+            border-radius: 50px;
         }
 
         .pessoa{
@@ -571,10 +572,19 @@
             color: white;
             width: 470px;
             padding: 15px;
+            border-radius: 50px;
         }
 
         .pessoa p{
             right: 20px;
+        }
+
+        .pessoa img{
+            margin: 5px;
+        }
+
+        .pessoa1 img{
+            margin: 5px;
         }
 
         .pessoa1{
@@ -594,10 +604,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #309fb0;
             color: white;
             width: 470px;
             padding: 15px;
+            font-size: 20px;
         }
 
         .login{
@@ -680,12 +690,14 @@
             border: 1px solid #ffe31d;
             border-radius: 20px;
             padding: 20px;
+            font-size: 15px;
         }
 
         .comentarios-sugestoes{
             border: 1px solid #ffe31d;
             border-radius: 20px;
             padding: 20px;
+            font-size: 15px;
         }
 
         .comentario{
@@ -742,4 +754,35 @@
 
         .eventoTitulo{
             font-size: 15px;
+        }
+
+        .conquistas{
+            border: 1px solid #ffe31d;
+            border-radius: 20px;
+            padding: 20px;
+            font-size: 15px;
+        }
+
+        .conquistas span{
+            text-align: center;
+            display: block;
+        }
+
+        .lista-conquistas{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .lista-conquistas img{
+            margin: 5px;
+            transition: transform 300ms;
+        }
+
+        .lista-conquistas img:hover{
+            transform: scale(1.10);
+        }
+
+        .sc{
+            filter: grayscale(100%);
         }
